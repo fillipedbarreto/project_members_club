@@ -1,0 +1,50 @@
+#member {
+    display: flex;
+
+    & .img-member {
+        position: relative;
+        width: 3.5rem;
+        height: 3.5rem;
+        background: var(--gradient-border-base);
+
+        border-radius: 0.625rem;
+
+        &::before {
+            content: "";
+            position: absolute;
+            inset: 2.25px;
+            width: 92%;
+            height: 92%;
+            border-radius: .55rem;;
+            background-color: white;
+        }
+
+        img {
+            position: absolute;
+            inset: 4px;
+            width: 86%;
+            height: 86%;
+            border-radius: 0.5rem;
+            object-fit: cover;
+            z-index: 1;
+        }
+    }
+
+    & .info-member {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        margin-left: 1rem;
+        gap: 0.25rem;
+
+        & h1 {
+            font: var(--title-sm);
+        }
+
+        & p {
+            font: var(--text-xs);
+            color: var(--gray-500);
+        }
+    }
+}

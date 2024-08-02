@@ -6,7 +6,7 @@
 
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Member CLub</title>
+        <title>Member Club</title>
 
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Montserrat:wght@500&family=Oxygen:wght@300;400;700&family=Syne:wght@700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="/src/styles/index.css">
@@ -25,10 +25,35 @@
         </header>
 
         <main class="container">
-            <section class="card">MEMBER</section>
-            <section class="card">HISTORY</section>
-            <section class="card">GIFT</section>
+            <section id="member" class="card">
+                <div class="img-member">
+                    <img src="/src/assets/img/Defaut.jpg" alt="Avatar do membro">
+                </div>
+                <div class="info-member">
+                    <h1>Nome do Membro</h1>
+                    <p>Cliente desde <span>data</span></p>
+                </div>    
+            </section>
+
             <section class="card">CARD</section>
+            <section class="card">GIFT</section>
+
+            <section id="history" class="card">
+                <header>
+                    <h2>HISTÓRICO</h2>
+                    <p>7 cortes</p>
+                </header>
+                <div id="separator"></div>
+                <ul>
+                    <li>
+                        <div>
+                            <h2>data</h2>
+                            <p>hora</p>
+                        </div>
+                        <img src="/src/assets/icons/checkmark-list.svg" alt="">
+                    </li>
+                </ul>
+            </section>
         </main>
 
         <script src="/src/scripts/index.js"></script>
