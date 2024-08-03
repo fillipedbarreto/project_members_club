@@ -14,7 +14,7 @@
     <body>
         <header class="container">
             <img src="assets/Logo.png" alt="Logo da Member Club">
-            <div>
+            <div id="search-bar">
                 <form>
                     <input type="text" placeholder="ID do cartão">
                     <button type="submit">
@@ -35,9 +35,45 @@
                 </div>    
             </section>
 
-            <section class="card">CARD</section>
-            <section class="card">GIFT</section>
+            <section id="member-card" class="card">
+                <header>
+                    <div>
+                        <h2>CARTÃO FIDELIDADE</h2>
+                        <p>Ao fazer cortes de cabelo, o décimo sai de graça!</p>
+                    </div>
+                    <span>ID: XXX-XXX-XXX-XXX</span>
+                </header>
+                <div id="stickers">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div>
+                        <img class="gift-box" src="/src/assets/icons/gift.svg" alt="Caixa de presente no ultimo corte">
+                    </div>
+                </div>
+            </section>
 
+            <section id="gift" class="card">
+                <div>
+                    <h3><strong>#</strong> cortes restantes</h3>
+                    <div>
+                        <div class="slider-background">
+                            <div class="slider-completion"></div>
+                        </div>
+                        <small># de 10</small>
+                    </div>
+                </div>
+                <div id="gift-aside">
+                    <img src="/src/assets/icons/PinGift.png" alt="Caixa de presente com cor">
+                </div>
+            </section>
+                
             <section id="history" class="card">
                 <header>
                     <h2>HISTÓRICO</h2>

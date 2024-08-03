@@ -54,7 +54,7 @@ header {
     }
 }
 
-@media (width <= 80em) {
+@media (width <= 90em) {
     header div form input {
         width: calc(100vw - 1.5rem);
     }
