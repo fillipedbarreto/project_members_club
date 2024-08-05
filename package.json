@@ -1,7 +1,8 @@
 {
   "scripts": {
     "build": "webpack ./src/scripts/index.js",
-    "dev": "webpack-dev-server --open"
+    "dev": "webpack-dev-server --open",
+    "server": "json-server server.json --port=3333"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",
