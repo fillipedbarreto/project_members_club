@@ -31,7 +31,7 @@ memberInput.addEventListener('change', (event) => {
 })
 
 async function fetchClientsByID(clientID) {
-    const response = await fetch(`http://localhost:3333/clients`)
+    const response = await fetch(`https://json-server-members-club.vercel.app/clients`)
     const data = await response.json()
     let clientFound = false
 
