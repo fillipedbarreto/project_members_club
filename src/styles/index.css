@@ -1,6 +1,6 @@
-@import url(/src/styles/global.css);
-@import url(/src/styles/header.css);
-@import url(/src/styles/member.css);
-@import url(/src/styles/history.css);
-@import url(/src/styles/card.css);
-@import url(/src/styles/gift.css);
+@import url(./global.css);
+@import url(./header.css);
+@import url(./member.css);
+@import url(./history.css);
+@import url(./card.css);
+@import url(./gift.css);

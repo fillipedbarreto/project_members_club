@@ -9,7 +9,7 @@
 export function updateClients(client, name, info, pic) {
     name.innerHTML = client.name
     info.innerHTML = client.clientSince
-    const defaultImg = '/src/assets/img/Default.jpg'
+    const defaultImg = '../assets/img/Default.jpg'
 
     if (client.img !== defaultImg) {
         pic.src = client.img;
@@ -34,7 +34,7 @@ export function updateCard(client, id, card) {
     for (let i = 0; i < client.loyaltyCard.cutsNeeded - 1; i++) {
         const cardField = document.createElement("div")
         const checkMarkImg = document.createElement("img")
-        checkMarkImg.src = `/src/assets/icons/checkmark-ok.png`
+        checkMarkImg.src = `../assets/icons/checkmark-ok.png`
 
         if (totalCuts !== 0) {
             cardField.append(checkMarkImg)
@@ -48,11 +48,11 @@ export function updateCard(client, id, card) {
     const giftImg = document.createElement("img")
 
     if (client.loyaltyCard.cutsRemaining !== 0) {
-        giftImg.src = `/src/assets/icons/gift.svg`
+        giftImg.src = `../assets/icons/gift.svg`
         giftImg.alt = "Caixa de presente no ultimo corte"
         giftImg.classList.add("gift-box")
     } else {
-        giftImg.src = `/src/assets/icons/PinGift.png`
+        giftImg.src = `../assets/icons/PinGift.png`
     }
     
     cardField.append(giftImg)
@@ -79,7 +79,7 @@ export function updateHistory(client, history) {
         const historyDate = document.createElement('h2')
         const historyHour = document.createElement('p')
         const historyImg = document.createElement('img')
-        historyImg.src = "/src/assets/icons/checkmark-list.svg"
+        historyImg.src = "../assets/icons/checkmark-list.svg"
         
         historyDate.innerHTML = client.appointmentHistory[index].date
         historyHour.innerHTML = client.appointmentHistory[index].time
